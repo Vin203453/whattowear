@@ -16,7 +16,7 @@
     <td id="USA">United States of America</td> 
   </thead>
   <tr>
-	<td>Ottawa</td>
+	<td onclick="getWeather(45.3, -75.7)">Ottawa</td>
 	<td>New York</td>
 </tr>
 <tr>
@@ -71,3 +71,23 @@
 		Copyright Owned by:Vinay Meldrum. Assisted by: Greg Meldrum and Anaya Meldrum
 	</footer>
 </body>   
+
+
+<script src="jquery-1.12.2.min.js">
+</script>
+
+<script type="text/javascript">
+/*
+https://api.forecast.io/forecast/1d4c2816e288a51b3a4f40cce1d1a448/37.8267,-122.423
+*/
+
+function getWeather(long, lat){
+	//alert ("Hi found a dog in " + long + " , " + lat);
+	$.ajax({
+  url: "https://api.forecast.io/forecast/1d4c2816e288a51b3a4f40cce1d1a448/" + long + "," + lat
+  })
+  .done(function( msg ) {
+    alert( "Data Saved: " + msg );
+  });
+}
+</script>
