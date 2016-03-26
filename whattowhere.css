@@ -1,0 +1,61 @@
+{
+	margin: 0px;
+	padding: 0px;
+
+}
+h1{
+	font: bold 20px Tahoma;
+}
+h2{
+	font: bold 14px Tahoma;
+}
+header, section, footer, asode, nav, article, hgroup{
+	display:block;
+}
+body{
+	text-align:center;
+}
+#big_wrapper{
+	width:1000px;
+	margin: 20px auto;
+	text-align:left;
+	background:#66FF66
+}
+#side_news{
+	float:right;
+	width: 220px;
+	margin:20px 0px;
+	padding: 30px;
+	border:1px solid black;
+	background:#FFFFFF
+}
+#footer{
+	clear: both;
+	text-align:center;
+	padding: 20px;
+	border-top: 1px solid black;
+	font:bold 15 Tahoma;
+}
+#main_section{
+	float:left;
+	width:660px;
+	margin:20px;
+	border:1px solid black;
+	background:#FFFFFF
+}
+#top_menu{
+	background:blue;
+	color:white;
+	border:1px solid black;
+}
+#top_header{
+	border:1px solid black;
+	background:#FFFFCC
+}
+thead td{
+	font: bold 18px Tahoma;
+	background:#66FFFF;
+	color: black;
+}
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
